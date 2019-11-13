@@ -64,7 +64,6 @@ def image6(img):
 	# Setting image height, image width and collor pattern
 	height, width, collor_pattern = img_stack.shape
 	#checking if the collor pattern is rgb or rgba
-	print collor_pattern
 	img_white = white_img(height, width, collor_pattern)
 	
 	img_vstack = np.vstack((img_stack, img_white))
