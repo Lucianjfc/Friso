@@ -14,10 +14,10 @@ def white_img(height, width, collor_pattern):
 	white_img = np.zeros([height,width,collor_pattern], dtype = np.uint8)
 	if collor_pattern == 4:
 		white_img[:,:height] = [0.1,0.1,0.1,0.1]
-		white_img[:,height] = [0.1,0.1,0.1,0.1]
+		#white_img[:,height] = [0.1,0.1,0.1,0.1]
 	else:
 		white_img[:,:height] = [0,0,0]
-		white_img[:,height] = [0,0,0]
+		#white_img[:,height] = [0,0,0]
 	return white_img
 
 def image1(img):
