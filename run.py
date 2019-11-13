@@ -1,10 +1,8 @@
 import numpy as np
 import matplotlib.image as mpimg
 
-#figura 4.24
-
 #lendo a imagem
-imagem = mpimg.imread('peixe.png')
+imagem = mpimg.imread('pegada.png')
 
 #figura 4.19
 #processing
@@ -23,7 +21,7 @@ width = x[1]
 collor_pattern = x[2]
 
 #checking if the collor pattern is rgb or rgba
-if(rgba == 4):
+if(collor_pattern == 4):
 	#processing
 	imagem_branca = np.zeros([height,width,collor_pattern], dtype = np.uint8)
 	imagem_branca[:,:height] = [0.1,0.1,0.1,0.1]
