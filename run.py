@@ -1,12 +1,17 @@
 import numpy as np
 import matplotlib.image as mpimg
-import sys
+import sys, os
 
 #lendo a imagem
 dir_img = sys.argv[1]
 dir_output = sys.argv[2]
-n = int(sys.argv[3])
+n = int(sys.argv[3]) if len(sys.argv) == 4 else 5
 img = mpimg.imread(dir_img)
+
+# Creating directory if not exists
+
+if not os.path.exists(dir_output):
+	os.mkdir(dir_output)
 
 height, width, collor_pattern = img.shape
 #figura 4.19
